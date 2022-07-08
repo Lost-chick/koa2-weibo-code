@@ -19,7 +19,7 @@ app.use(bodyparser({
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
-
+console.log(__dirname)
 app.use(views(__dirname + '/views', {
   extension: 'ejs'
 }))
